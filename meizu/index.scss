@@ -1,0 +1,286 @@
+@import "base";
+@import "mixin";
+body,html{height: 100%;}
+.wrap{
+	min-width: 1240px;
+	height: 100%;
+}
+
+//版心宽度
+.main {
+    width: 1240px;
+    
+    margin: 0 auto;
+}
+@mixin fl {
+ float: left;   
+}
+@mixin fr {
+    float: right;   
+   }
+
+.layout-header{
+    width: 100%;
+    height: 80px;
+   
+    background-color: #fff;
+    border-bottom: 1px solid #efefef;
+    .layout-heder-logo{
+        @include fl;
+        width: 150px;
+        height: 80px;
+        
+        display: block;
+        a{
+            width: 150px;
+            height: 80px;
+            img{
+                width: 125px;
+                height: 23px;
+                margin-top: 28px;
+            }
+        }
+    }
+    .layout-heder-nav{
+         @include fl;
+        margin-left: 108px;
+        width: 710px;
+        li{
+            @include fl;
+            margin: 0 20px 0 15px;
+            width: 28px;
+            height: 80px;
+            a{
+                display: block;
+                color: #333;
+                font-size: 14px;
+                height: 80px;
+                line-height: 80px;
+                transition: color .2s linear;
+            }
+            
+           
+        }
+        // @include clearBoth;
+        li:nth-child(5){
+            width: 38px;
+            margin: 0 24px 0 15px;
+        }
+        li:nth-child(7){
+            margin: 0 30px 0px 15px;
+        }
+        li:nth-child(9){
+            margin: 0 50px 0px 10px;
+        }
+
+    }
+    .layout-heder-service{
+        @include fl;
+        width: 272px;
+        height: 80px;
+        line-height: 80px;
+        li{
+            @include fl;
+        }
+        li:nth-child(1){
+            position: relative;
+            height: 30px;
+            border-radius: 20px;
+            padding: 0;
+            margin: 24px 0 0 18px;
+            width: 170px;
+            text-align: right;
+            word-break: keep-all;
+            white-space: nowrap;
+            border: 1px solid rgba(0,0,0,.15);
+            line-height: 28px;
+            margin-left: 0;
+            transition: all .8s ease-in-out;
+            input{
+                vertical-align: middle;
+                border: none;
+                outline: 0;
+                width: 125px;
+                height: 20px;
+                margin-right: 20px;
+                transition: width .5s;
+                font-size: 12px;
+                line-height: 20px;
+                color: #999;
+           
+            }
+        }
+        //放大镜图标
+        .fdj{
+            position: absolute;
+            right: 3px;
+            top: 4px;
+            width: 23px;
+          
+            cursor: pointer;
+        }
+        li:nth-child(2){
+            position: relative;
+           line-height: 30px;
+            margin-right: 3px;
+            padding: 26px 8px 0 12px;
+            a{
+               
+                display: inline-block;
+                vertical-align: middle;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                overflow: hidden;
+                color: #666;
+                img{
+                    width: 25px;
+                    height: 25px;
+                }
+                
+            }
+            span{
+                z-index: 9999;
+                position: absolute;
+                top: 26;
+                right: 6px;
+                height: 16px;
+                min-width: 8px;
+                border-radius: 50%;
+                background: #F10000;
+                color: #fff;
+                font-size: 12px;
+                line-height: 15px;
+                text-align: center;
+                display: inline-block;
+                padding: 0 4px;
+                text-indent: 0;
+                font-weight: 300;
+
+            }
+        }
+        li:nth-child(3){
+            @extend  li:nth-child(2);
+            margin-left: 5px;
+            margin-top: 26px;
+            padding: 0;
+        }
+      }/*最右侧ul*/
+    }/*header结束位置*/
+    
+
+    
+    .catalog{
+        position: relative;
+        .main{
+            overflow: hidden;
+        }
+        
+    }
+
+    //侧边导航栏
+    .catalogList{
+    width: 234px;
+    height: 420px;
+    border: 0;
+    color: #fff;
+    background: rgba(105,101,101,.6);
+    padding: 20px 0;
+    position: absolute;
+    z-index: 99;
+        li{
+           
+            
+            height: 42px;
+            line-height: 42px;
+            color: #424242;
+            &:hover{
+               background-color: #ff6700;
+            }
+            a{
+                padding-left: 30px;
+                color: #fff;
+                font-size: 16px;
+               
+                img{
+                    width: 16px;
+                    height: 16px;
+                    margin-left: 130px;
+                }
+            }
+            
+        }
+    }
+//banner图
+.mainbanner{
+    width: 100%;
+    position: relative;
+    display: flex;
+   
+    li{
+        
+        // position: absolute;
+    }
+    .bannerimg{
+        width: 1240px;
+        height: 460px;
+    }
+     //@include clearBoth;
+}
+.bannerbtn{
+    width: 500px;
+    padding: 0 10px;
+    height: 25px;
+    position: absolute;
+    z-index: 20;
+    left: 50%;
+    right: 0;
+    margin-left: -250px;
+    bottom: 5px;
+    text-align: center;
+    span{
+    display: inline-block;
+    zoom: 1;
+    width: 8px;
+    height: 8px;
+    background-color: rgba(0,0,0,.6);
+    margin: 5px 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    }
+    .banneractive{
+        background-color: #efefef;
+    }
+}
+
+
+//banner图下方区域
+.bannerList{
+    overflow: hidden;
+    
+    li{
+        @include fl;
+        width: 25%;
+        padding-top: 45px;
+        a{
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            img{
+                height: 130px;
+            }
+            em{
+                display: block;
+                color: #333;
+                font-size: 20px;
+            }
+            p{
+                font-size: 14px;
+                color: #999;
+            }
+        }
+       
+    }
+    
+}
