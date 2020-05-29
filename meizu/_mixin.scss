@@ -2,11 +2,15 @@
 //共享的一些混合
 
 //清除浮动
-@mixin clearBoth {
-    content: "";
-    height: 0;
-    clear: both;
-    display: block;
-    overflow: hidden;
-    visibility: hidden; 
+
+@mixin clearfix {
+    &:after {
+        clear: both;
+        content: '.';
+        display: block;
+        height: 0;
+        line-height: 0;
+        overflow: hidden;
+    }
+   
 }
