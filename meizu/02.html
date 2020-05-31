@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //侧边导航栏数据
+        var nav = {
+           topNav :[
+           {
+               title:'手机',
+               child:[{
+                 img:'../images/navphone1.jpg',
+                 name:'【新品】魅族17pro' , 
+                 price:'￥4299'
+               },
+               {
+                 img:'../images/navphone2.jpg',
+                 name:'【新品】魅族17' ,
+                 price:'￥3699' 
+
+               },
+               {
+                 img:'../images/navphone3.jpg',
+                 name:'【新品】魅族17航母限定版',
+                 price:'￥4299'  
+               },
+               {
+                 img:'../images/navphone4.jpg',
+                 name:'【新品】魅族17pro典藏版',
+                 price:'￥9999'  
+               },
+               {
+                 img:'../images/navphone5.jpg',
+                 name:'魅族16T' ,
+                 price:'￥2299 '
+               },
+               {
+                 img:'../images/navphone6.jpg',
+                 name:'魅族16XS',
+                 price:'￥1499 ' 
+               },
+               {
+                 img:'../images/navphone7.jpg',
+                 name:'魅族16th' ,
+                 price:'￥1798' 
+               },
+               {
+                 img:'../images/navphone8.jpg',
+                 name:'魅族X8',
+                 price:'￥1298 ' 
+               }
+            
+            ]
+           },
+           {
+               title:'声学',
+               child:[{
+                 img:'../images/navear1.jpg',
+                 name:'【新品】魅族HD60耳机' ,
+                 price:'￥1098 '  
+               },
+               {
+                 img:'../images/navear2.jpg',
+                 name:'魅族头戴式耳机',
+                 price:'￥499'    
+               },
+               {
+                 img:'../images/navear3.jpg',
+                 name:'魅族真无线蓝牙耳机',
+                 price:'￥399'    
+               },
+               {
+                 img:'../images/navear4.jpg',
+                 name:'魅族解码耳放',
+                 price:'￥169'    
+               },
+               {
+                 img:'../images/navear5.jpg',
+                 name:'魅族EP3C耳机',
+                 price:'￥129'   
+               },
+               {
+                 img:'../images/navear6.jpg',
+                 name:'魅族无线降噪耳机',
+                 price:'￥399'    
+               },
+               {
+                 img:'../images/navear7.jpg',
+                 name:'魅族解码耳放pro',
+                 price:'￥299 '  
+               },
+               {
+                 img:'../images/navear8.jpg',
+                 name:'高端定制耳机',
+                 price:'￥299  ' 
+               }
+            
+            ]
+
+           },
+           {
+               title:'配件',
+               child:[{
+                 img:'../images/navfitting1.jpg',
+                 name:'【新品】魅族无线超充板',
+                 price:'￥169' 
+               },
+               {
+                 img:'../images/navfitting2.jpg',
+                 name:'【新品】Pandaer「17」系列 手机壳',
+                 price:'￥49 ' 
+               },
+               {
+                 img:'../images/navfitting3.jpg',
+                 name:'【新品】魅族 17 系列 液态硅胶壳',
+                 price:'￥89 ' 
+               },
+               {
+                 img:'../images/navfitting4.jpg',
+                 name:'【新品】魅族超充 USB-C 移动电源',
+                 price:'￥169 '   
+               },
+               {
+                 img:'../images/navfitting5.jpg',
+                 name:'【新品】魅族超充 GaN 三口充电器',
+                 price:'￥199 '   
+               },
+               {
+                 img:'../images/navfitting6.jpg',
+                 name:'【新品】魅族 Type-C 数据线',
+                 price:'￥49 '   
+               },
+               {
+                 img:'../images/navfitting7.jpg',
+                 name:'魅族中国红 Type-C 金属编织线',
+                 price:'￥39 '   
+               },
+               {
+                 img:'../images/navfitting8.jpg',
+                 name:'魅族 Type-C 游戏专用线' ,
+                 price:'￥49 '  
+               }
+            
+            ]
+
+           },
+           {
+               title:'生活',
+               child:[{
+                 img:'../images/navlife1.jpg',
+                 name:'Lifeme 双肩包' ,
+                 price:'￥299 '  
+               },
+               {
+                 img:'../images/navlife2.jpg',
+                 name:'Pandaer「17」系列 T恤' ,
+                 price:'￥269'  
+               },
+               {
+                 img:'../images/navlife3.jpg',
+                 name:'Pandaer「17」系列 果冻包',
+                 price:'￥99 '   
+               },
+               {
+                 img:'../images/navlife4.jpg',
+                 name:'Lifeme 相机包',
+                 price:'￥129 '   
+               },
+               {
+                 img:'../images/navlife5.jpg',
+                 name:'魅族防飞溅声波电动牙刷',
+                 price:'￥299 '   
+               },
+               {
+                 img:'../images/navlife6.jpg',
+                 name:'魅族极简都市双肩包',
+                 price:'￥179 '  
+               },
+               {
+                 img:'../images/navlife7.jpg',
+                 name:'Pandaer readnap T恤',
+                 price:'￥199 '   
+               },
+               {
+                 img:'../images/navlife8.jpg',
+                 name:'Flyme 8 暗夜流光卫衣',
+                 price:'￥269 '   
+               }
+            
+            ]
+
+           },
+           ],
+           sideNav:[
+               {
+               title:'手机',
+               child:[{
+                 img:'../images/navphone1.jpg',
+                 name:'魅族17pro'  
+               },
+               {
+                 img:'../images/navphone2.jpg',
+                 name:'魅族17'  
+               },
+               {
+                 img:'../images/navphone3.jpg',
+                 name:'魅族17航母限定版'  
+               },
+               {
+                 img:'../images/navphone4.jpg',
+                 name:'魅族17pro典藏版'  
+               },
+               {
+                 img:'../images/navphone5.jpg',
+                 name:'魅族16T'  
+               },
+               {
+                 img:'../images/navphone6.jpg',
+                 name:'魅族16XS'  
+               },
+               {
+                 img:'../images/navphone7.jpg',
+                 name:'魅族16th'  
+               },
+               {
+                 img:'../images/navphone8.jpg',
+                 name:'魅族X8'  
+               }
+            
+            ]
+           },
+           {
+               title:'声学',
+               child:[{
+                 img:'../images/navear1.jpg',
+                 name:'魅族HD60耳机'  
+               },
+               {
+                 img:'../images/navear2.jpg',
+                 name:'魅族头戴式耳机'  
+               },
+               {
+                 img:'../images/navear3.jpg',
+                 name:'魅族真无线蓝牙耳机'  
+               },
+               {
+                 img:'../images/navear4.jpg',
+                 name:'魅族解码耳放'  
+               },
+               {
+                 img:'../images/navear5.jpg',
+                 name:'魅族EP3C耳机'  
+               },
+               {
+                 img:'../images/navear6.jpg',
+                 name:'魅族无线降噪耳机'  
+               },
+               {
+                 img:'../images/navear7.jpg',
+                 name:'魅族解码耳放pro'  
+               },
+               {
+                 img:'../images/navear8.jpg',
+                 name:'高端定制耳机'  
+               }
+            
+            ]
+
+           },
+           {
+               title:'配件',
+               child:[{
+                 img:'../images/navfitting1.jpg',
+                 name:'魅族无线超充板'  
+               },
+               {
+                 img:'../images/navfitting2.jpg',
+                 name:'Pandaer「17」系列 手机壳'  
+               },
+               {
+                 img:'../images/navfitting3.jpg',
+                 name:'魅族 17 系列 液态硅胶壳'  
+               },
+               {
+                 img:'../images/navfitting4.jpg',
+                 name:'魅族超充 USB-C 移动电源'  
+               },
+               {
+                 img:'../images/navfitting5.jpg',
+                 name:'魅族超充 GaN 三口充电器'  
+               },
+               {
+                 img:'../images/navfitting6.jpg',
+                 name:'魅族 Type-C 数据线'  
+               },
+               {
+                 img:'../images/navfitting7.jpg',
+                 name:'魅族中国红 Type-C 金属编织线'  
+               },
+               {
+                 img:'../images/navfitting8.jpg',
+                 name:'魅族 Type-C 游戏专用线'  
+               }
+            
+            ]
+
+           },
+           {
+               title:'生活',
+               child:[{
+                 img:'../images/navlife1.jpg',
+                 name:'Lifeme 双肩包'  
+               },
+               {
+                 img:'../images/navlife2.jpg',
+                 name:'Pandaer「17」系列 T恤'  
+               },
+               {
+                 img:'../images/navlife3.jpg',
+                 name:'Pandaer「17」系列 果冻包'  
+               },
+               {
+                 img:'../images/navlife4.jpg',
+                 name:'Lifeme 相机包'  
+               },
+               {
+                 img:'../images/navlife5.jpg',
+                 name:'魅族防飞溅声波电动牙刷'  
+               },
+               {
+                 img:'../images/navlife6.jpg',
+                 name:'魅族极简都市双肩包'  
+               },
+               {
+                 img:'../images/navlife7.jpg',
+                 name:'Pandaer readnap T恤'  
+               },
+               {
+                 img:'../images/navlife8.jpg',
+                 name:'Flyme 8 暗夜流光卫衣'  
+               }
+            
+            ]
+
+           },
+           {
+               title:'生活',
+               child:[{
+                 img:'../images/navlife1.jpg',
+                 name:'Lifeme 双肩包'  
+               },
+               {
+                 img:'../images/navlife2.jpg',
+                 name:'Pandaer「17」系列 T恤'  
+               },
+               {
+                 img:'../images/navlife3.jpg',
+                 name:'Pandaer「17」系列 果冻包'  
+               },
+               {
+                 img:'../images/navlife4.jpg',
+                 name:'Lifeme 相机包'  
+               },
+               {
+                 img:'../images/navlife5.jpg',
+                 name:'魅族防飞溅声波电动牙刷'  
+               },
+               {
+                 img:'../images/navlife6.jpg',
+                 name:'魅族极简都市双肩包'  
+               },
+               {
+                 img:'../images/navlife7.jpg',
+                 name:'Pandaer readnap T恤'  
+               },
+               {
+                 img:'../images/navlife8.jpg',
+                 name:'Flyme 8 暗夜流光卫衣'  
+               }
+            
+            ]
+
+           },
+           {
+               title:'手机',
+               child:[{
+                 img:'../images/navphone1.jpg',
+                 name:'魅族17pro'  
+               },
+               {
+                 img:'../images/navphone2.jpg',
+                 name:'魅族17'  
+               },
+               {
+                 img:'../images/navphone3.jpg',
+                 name:'魅族17航母限定版'  
+               },
+               {
+                 img:'../images/navphone4.jpg',
+                 name:'魅族17pro典藏版'  
+               },
+               {
+                 img:'../images/navphone5.jpg',
+                 name:'魅族16T'  
+               },
+               {
+                 img:'../images/navphone6.jpg',
+                 name:'魅族16XS'  
+               },
+               {
+                 img:'../images/navphone7.jpg',
+                 name:'魅族16th'  
+               },
+               {
+                 img:'../images/navphone8.jpg',
+                 name:'魅族X8'  
+               }
+            
+            ]
+           },
+           {
+               title:'声学',
+               child:[{
+                 img:'../images/navear1.jpg',
+                 name:'魅族HD60耳机'  
+               },
+               {
+                 img:'../images/navear2.jpg',
+                 name:'魅族头戴式耳机'  
+               },
+               {
+                 img:'../images/navear3.jpg',
+                 name:'魅族真无线蓝牙耳机'  
+               },
+               {
+                 img:'../images/navear4.jpg',
+                 name:'魅族解码耳放'  
+               },
+               {
+                 img:'../images/navear5.jpg',
+                 name:'魅族EP3C耳机'  
+               },
+               {
+                 img:'../images/navear6.jpg',
+                 name:'魅族无线降噪耳机'  
+               },
+               {
+                 img:'../images/navear7.jpg',
+                 name:'魅族解码耳放pro'  
+               },
+               {
+                 img:'../images/navear8.jpg',
+                 name:'高端定制耳机'  
+               }
+            
+            ]
+
+           },
+           {
+               title:'配件',
+               child:[{
+                 img:'../images/navfitting1.jpg',
+                 name:'魅族无线超充板'  
+               },
+               {
+                 img:'../images/navfitting2.jpg',
+                 name:'Pandaer「17」系列 手机壳'  
+               },
+               {
+                 img:'../images/navfitting3.jpg',
+                 name:'魅族 17 系列 液态硅胶壳'  
+               },
+               {
+                 img:'../images/navfitting4.jpg',
+                 name:'魅族超充 USB-C 移动电源'  
+               },
+               {
+                 img:'../images/navfitting5.jpg',
+                 name:'魅族超充 GaN 三口充电器'  
+               },
+               {
+                 img:'../images/navfitting6.jpg',
+                 name:'魅族 Type-C 数据线'  
+               },
+               {
+                 img:'../images/navfitting7.jpg',
+                 name:'魅族中国红 Type-C 金属编织线'  
+               },
+               {
+                 img:'../images/navfitting8.jpg',
+                 name:'魅族 Type-C 游戏专用线'  
+               }
+            
+            ]
+
+           },
+           {
+               title:'生活',
+               child:[{
+                 img:'../images/navlife1.jpg',
+                 name:'Lifeme 双肩包'  
+               },
+               {
+                 img:'../images/navlife2.jpg',
+                 name:'Pandaer「17」系列 T恤'  
+               },
+               {
+                 img:'../images/navlife3.jpg',
+                 name:'Pandaer「17」系列 果冻包'  
+               },
+               {
+                 img:'../images/navlife4.jpg',
+                 name:'Lifeme 相机包'  
+               },
+               {
+                 img:'../images/navlife5.jpg',
+                 name:'魅族防飞溅声波电动牙刷'  
+               },
+               {
+                 img:'../images/navlife6.jpg',
+                 name:'魅族极简都市双肩包'  
+               },
+               {
+                 img:'../images/navlife7.jpg',
+                 name:'Pandaer readnap T恤'  
+               },
+               {
+                 img:'../images/navlife8.jpg',
+                 name:'Flyme 8 暗夜流光卫衣'  
+               }
+            
+            ]
+
+           },
+
+           {
+               title:'手机',
+               child:[{
+                 img:'../images/navphone1.jpg',
+                 name:'魅族17pro'  
+               },
+               {
+                 img:'../images/navphone2.jpg',
+                 name:'魅族17'  
+               },
+               {
+                 img:'../images/navphone3.jpg',
+                 name:'魅族17航母限定版'  
+               },
+               {
+                 img:'../images/navphone4.jpg',
+                 name:'魅族17pro典藏版'  
+               },
+               {
+                 img:'../images/navphone5.jpg',
+                 name:'魅族16T'  
+               },
+               {
+                 img:'../images/navphone6.jpg',
+                 name:'魅族16XS'  
+               },
+               {
+                 img:'../images/navphone7.jpg',
+                 name:'魅族16th'  
+               },
+               {
+                 img:'../images/navphone8.jpg',
+                 name:'魅族X8'  
+               }
+            
+            ]
+           }
+
+
+        ]
+            
+        }
+
+        var str = JSON.stringify(nav);
+            console.log(str);
+    </script>
+</body>
+</html>

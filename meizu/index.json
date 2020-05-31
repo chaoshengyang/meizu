@@ -1,0 +1,48 @@
+{
+"phoneList":[
+    {
+        "title":"魅族 17",
+        "desc":"高通骁龙 865 + UFS 3.1 高速闪存  |  6400W 全场景影像系统",
+        "price":"3699",
+         "img":"../images/meizu17.png",
+         "sign":"新品"
+    },
+    {
+        "title":"魅族 17 Pro",
+        "desc":"高通骁龙 865 + UFS 3.1 + LPDDR5 | 6400W 全场景 AR 专业影像系统",
+        "price":"4299",
+         "img":"../images/meizu17pro.png",
+         "sign":"新品"
+    },
+    {
+        "title":"魅族 17 航母限定版",
+        "desc":"以梦为舰 热爱起航",
+        "price":"4299",
+         "img":"../images/meizu17_2.png",
+         "sign":"新品"
+    },
+    {
+        "title":"魅族 17 Pro 晓芳窑艺术典藏版",
+        "desc":"这艺术 科技极了",
+        "price":"9999",
+         "img":"../images/meizu17diancang.png",
+         "sign":"新品"
+
+    },
+    {
+        "title":"魅族 16T",
+        "desc":"6.5英寸极边全面屏 | 骁龙855旗舰处理器",
+        "price":"1999",
+         "img":"../images/meizu16T.png",
+         "sign":"热卖"
+    },
+    {
+        "title":"魅族 16s",
+        "desc":"高通骁龙855 | 4800W光学防抖 ",
+        "price":"2399",
+         "img":"../images/meizu16s.png",
+         "sign":""
+    }
+
+  ]
+}   

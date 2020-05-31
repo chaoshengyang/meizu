@@ -8,7 +8,8 @@ require.config({
         "jquery": "jquery-1.11.3",
         "jquery-cookie": "jquery.cookie",
         "banner": "banner",
-        "index": "index"
+        "index": "index",
+        "nav":"nav"
     },
     shim: {
         //jquery.cookie 是依赖于 jquery开发
@@ -23,9 +24,12 @@ require.config({
 
 
 //使用轮播图模块，实现轮播效果
-require(["banner"], function(banner){
+require(["banner","nav","jquery"], function(banner,nav,$){
     banner.handleClick(); //实现点击按钮，完成图片的切换
     //banner.handleHover(); //自动轮播和添加banner图的移入移出效果
+    nav. topNavdownload()
+    nav.topNavTab()
+    nav.sideNavTab()
 
 
 })

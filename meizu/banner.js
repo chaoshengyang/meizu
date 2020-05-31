@@ -8,7 +8,22 @@ define(["jquery"], function($){
     var oUl = null;
 
     function handleClick(){
-        //给页面上有的按钮添加点击
+        $.ajax({
+            url:"../data/banner.json",
+            success:function(res){
+                var bannerimg = res.bannerimg
+                // console.log(bannerimg)
+                 for(var i = 0;i<bannerimg.length;i++){
+                    $(`<li><a href=""><img src="${bannerimg[i].img}" alt="" class="bannerimg"></a></li>`)
+                    .appendTo("#mainbanner")
+                 }
+                 
+            },
+            error:function(msg){
+                console.log(msg)
+            }
+        })
+       //给页面上有的按钮添加点击
         aBtns = $("#play").find(".bannerbtn span");
         oUl = $("#play").find(".mainbanner");
         aBtns.click(function(){
@@ -29,7 +44,7 @@ define(["jquery"], function($){
     //         }, 2000);
     //     })
     // }
-
+    // //自动轮播
     // timer = setInterval(function(){
     //     iNow++;
     //     tab();
@@ -56,6 +71,6 @@ define(["jquery"], function($){
 
     return {
         handleClick: handleClick,
-        //handleHover: handleHover
+         //handleHover: handleHover
     }
 })
