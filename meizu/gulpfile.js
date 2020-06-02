@@ -6,6 +6,7 @@ const htmlmin = require("gulp-htmlmin");
 
 gulp.task("copy-html", () => {
     return gulp.src("*.html")
+    //压缩HTML
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("dist/"))
     .pipe(connect.reload());
@@ -36,6 +37,7 @@ const scss = require("gulp-sass");
 const minifyCSS = require("gulp-minify-css");
 const rename = require("gulp-rename");
 
+//如果要压缩和重命名CSS，每一个文件要分配一个任务
 gulp.task("scss1", () => {
     return gulp.src("index.scss")
     .pipe(scss())
@@ -45,24 +47,24 @@ gulp.task("scss1", () => {
     .pipe(gulp.dest("dist/css"))
     .pipe(connect.reload());
 })
-//拷贝重置css
+
 gulp.task("scss2", () => {
-    return gulp.src("_base.scss")
-    .pipe(minifyCSS())
-    .pipe(rename("_base.min.css"))
+    return gulp.src("shoplist.scss")
+    //编译插件
+    .pipe(scss())
+    //生成的文件保存到制定文件夹
     .pipe(gulp.dest("dist/css"))
-    .pipe(connect.reload());
-})
-gulp.task("scss3", () => {
-    return gulp.src("_mixin.scss")
+    //将文件压缩 重命名
     .pipe(minifyCSS())
-    .pipe(rename("_mixin.min.css"))
+    .pipe(rename("shoplist.min.css"))
+    //再保存到指定文件夹下
     .pipe(gulp.dest("dist/css"))
     .pipe(connect.reload());
 })
 
+
 //编写一个可以执行上述所有文件的任务
-gulp.task("build", ["copy-html", "images", "scripts", "data", "scss1","scss2","scss3"], () => {
+gulp.task("build", ["copy-html", "images", "scripts", "data", "scss1","scss2"], () => {
     console.log("项目建立成功");
 })
 
@@ -73,8 +75,8 @@ gulp.task("watch", () => {
     gulp.watch(["*.json", "!package.json"], ['data']);
     gulp.watch(["*.js", "!gulpfile.js"], ['scripts']);
     gulp.watch("index.scss", ['scss1']);
-    gulp.watch("_base.scsss", ['scss2']);
-    gulp.watch("_mixin.scsss", ['scss3']);
+    gulp.watch("shoplist.scss", ['scss2']);
+   
 })
 
 //启动一个临时服务器  不支持运行php
@@ -88,5 +90,5 @@ gulp.task("server", () => {
 })
 
 
-//同时启动服务和监听
+//同时启动服务和监听 运行gulp就会运行名字default的任务
 gulp.task("default", ["watch", 'server']);

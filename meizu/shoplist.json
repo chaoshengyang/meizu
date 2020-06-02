@@ -1,0 +1,54 @@
+{
+    "phoneList":[
+        {
+            "title":"魅族 17 Pro",
+            "desc":"mSmart 5G 快省稳系统方案 | 高通骁龙 865 + UFS 3.1 + LPDDR5 | 6400W 全场景 AR 专业影像系统  27W 无线超充 + 4500mAh 超大电池",
+            "price":"4299",
+             "imgs":["../images/17pro_1.jpg","../images/17pro_2.jpg","../images/17pro_3.jpg"],
+            
+             "btns":["../images/blackbtn.png","../images/whitebtn.png","../images/tianqingbtn.png"]
+          
+        },
+        {
+            "title":"魅族 17",
+            "desc":"【6月1日当天 限时享12期分期免息】mSmart 5G 快省稳系统方案  |  高通骁龙 865 + UFS 3.1 高速闪存  |  6400W 全场景影像系统 定制三星 Super AMOLED 90 帧直屏  |  4500mAh 超大电池",
+            "price":"3699",
+             "imgs":["../images/17_1.jpg","../images/17_2.jpg","../images/17_3.jpg"],
+            
+             "btns":["../images/tianqingbtn.png","../images/blackbtn.png","../images/greybtn.png"]
+          
+        },
+        {
+          "title":"魅族 17 Pro 晓芳窑艺术典藏版",
+          "desc":"这艺术 科技极了",
+          "price":"9999",
+           "imgs":["../images/17pro_dc.jpg"],
+          
+           "btns":["../images/tianqingbtn.png"]
+        
+      },
+      {
+        "title":"魅族 16T",
+        "desc":"6.5英寸极边全面屏 | 骁龙855旗舰处理器 | 4500mAh续航怪兽 | UFS 3.0 高速闪存 ",
+        "price":"1999",
+         "imgs":["../images/16T_1.jpg","../images/16T_2.jpg","../images/16T_3.jpg"],
+        
+         "btns":["../images/bluegreenbtn.png","../images/亮黑btn.png","../images/亮红btn.png"]
+      
+    },
+    {
+      "title":"魅族 16s Pro",
+      "desc":"高通骁龙 855 Plus  | 索尼 4800W 像素超广角 AI 三摄 | 极边全面屏 | Flyme8 尝鲜体验 | 极速屏下指纹 | 全功能NFC",
+      "price":"2699",
+       "imgs":["../images/16spro_1.jpg","../images/16spro_2.jpg","../images/16spro_3.jpg",
+        "../images/16spro_4.jpg"],
+      
+       "btns":["../images/skybluebtn.png","../images/亮黑btn.png","../images/bluegreenbtn.png","../images/greywhitebtn.png"]
+    
+  }
+       
+        
+     
+       
+      ]
+    }   
