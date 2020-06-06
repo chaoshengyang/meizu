@@ -2,8 +2,9 @@ define([
     "jquery"
 ], function ($) {
     function Shopdownload() {
+       
         $.ajax({
-            url: "../data/shoplist.json",
+            url: "./data/shoplist.json",
             success: function (res) {
                 // console.log(res)
                 //取出数据中的phoneList，是个数组
@@ -16,7 +17,7 @@ define([
                     var item = $(`
                     <li class="phoneitem">
      
-                                     <a href="" class="itemphone">
+                                     <a href="http://localhost:8888/shopDesc.html?product_id=${phoneList[i].product_id}" class="itemphone">
                                          <img src="${phoneList[i].imgs[0]}" alt="" class="itemimg">
                                          <ul class="item-side">
                                            
@@ -69,6 +70,7 @@ define([
             $(this).addClass("item-side-active");
             var imgsrc =  $(this).attr("src");
              //console.log(imgsrc)
+            
               $(this).parents(".itemphone").find(".itemimg").attr("src",`${imgsrc}` );
 
 
@@ -79,7 +81,7 @@ define([
     //推荐部分数据下载
     function recdownload(){
         $.ajax({
-            url:"../data/recommend.json",
+            url:"./data/recommend.json",
             success:function(res){
                 var recList = res.recList
                 //console.log(recList)

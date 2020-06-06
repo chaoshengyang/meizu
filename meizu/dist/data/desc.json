@@ -1,0 +1,86 @@
+[
+        {   
+
+            "product_id":"17pro",
+            "title":"魅族 17 Pro",
+            "desc":"mSmart 5G 快省稳系统方案 | 高通骁龙 865 + UFS 3.1 + LPDDR5 | 6400W 全场景 AR 专业影像系统 27W 无线超充 + 4500mAh 超大电池",
+            "price":"4299.00",
+            "color":["乌金","定白","天青"],
+            "RAM":["8+128GB","12+256GB"],
+            "huabei":[
+                {
+                "money":"¥1465.96×3期",
+                "time":"含手续费 ￥32.96/期"
+                 },
+                 {
+                    "money":"¥748.74×6期",
+                    "time":"含手续费 ￥32.24/期"
+                },
+                {
+                    "money":"¥385.11×12期",
+                    "time":"含手续费 ￥26.86/期"
+                  }
+
+            ],
+            "img":["./images/17pro_1.jpg",
+                "./images/17pro_2.jpg",
+               "./images/17pro_3.jpg"
+                 ],
+            "img1":["./images/17pro_1.jpg",
+                 "./images/17pro_1_back.jpg",
+                "./images/17pro_1_ce.jpg",
+                "./images/17pro_1_top.jpg"],
+
+             "img2":["./images/17pro_2.jpg",
+                    "./images/17pro_2_back.jpg",
+                   "./images/17pro_2_ce.jpg",
+                   "./images/17pro_2_top.jpg"],
+              "img3":["./images/17pro_3.jpg",
+                    "./images/17pro_3_back.jpg",
+                   "./images/17pro_3_ce.jpg",
+                   "./images/17pro_3_top.jpg"]
+
+        },
+        {   
+
+            "product_id":"17",
+            "title":"魅族 17 ",
+            "desc":"【现货开售】mSmart 5G 快省稳系统方案 | 高通骁龙 865 + UFS 3.1 高速闪存 | 6400W 全场景影像系统 定制三星 Super AMOLED 90 帧直屏 | 4500mAh 超大电池",
+            "price":"3699.00",
+            "color":["松深入墨","十七度灰","AG梦幻独角兽"],
+            "RAM":["8+128GB","8+256GB"],
+            "huabei":[
+                {
+                "money":"¥1261.36×3期",
+                "time":"含手续费 ￥28.36/期"
+                 },
+                 {
+                    "money":"¥644.24×6期",
+                    "time":"含手续费 ￥27.74/期"
+                },
+                {
+                    "money":"¥331.36×12期",
+                    "time":"含手续费 ￥23.11/期"
+                  }
+
+            ],
+            "img":["./images/17_2.jpg",
+                "./images/17_3.jpg",
+               "./images/17_1.jpg"
+                 ],
+            "img1":["./images/17_2.jpg",
+                 "./images/17_2_back.jpg",
+                "./images/17_2_ce.jpg",
+                "./images/17_2_top.jpg"],
+
+             "img2":["./images/17_3.jpg",
+                    "./images/17_3_back.jpg",
+                   "./images/17_3_ce.jpg",
+                   "./images/17_3_top.jpg"],
+              "img3":["./images/17_1.jpg",
+                    "./images/17_1_back.jpg",
+                   "./images/17_1_ce.jpg",
+                   "./images/17_1_top.jpg"]
+
+        }
+    ]

@@ -581,10 +581,12 @@ body,html{height: 100%;}
                         margin-bottom: 2px;
                     }
                     .goods-desc{
-                       
+                        display: inline-block;
+                        height: 20px !important;
+                        
                         margin-bottom: 3px;
                         color: #999;
-                        font-size: 14px;
+                        font-size: 13px;
                     }
                     .goods-price{
                         position: relative;

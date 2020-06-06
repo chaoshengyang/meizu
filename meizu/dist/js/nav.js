@@ -5,7 +5,7 @@ define([
     //发送ajax请求下载顶部数据
     function topNavdownload(){
         $.ajax({
-            url:"../data/nav.json",
+            url:"./data/nav.json",
             success:function(res){
                 //console.log(res)
                 //取出数据中的topNav，是个数组
@@ -13,7 +13,7 @@ define([
                 //console.log(topNav)
                 var NavStr = ''
                 NavStr = topNav.reduce((html,item)=>{
-                   html+= `<li class="nav-item"><a href="">${item.title}</a></li>`
+                   html+= `<li class="nav-item"><a href="./shoplist.html">${item.title}</a></li>`
                    //不要忘了把结果return出去
 					return html
                 },'')
@@ -36,7 +36,7 @@ define([
     //顶部导航隐藏内容
     function topNav(){
            $.ajax({
-            url:"../data/nav.json",
+            url:"./data/nav.json",
             success:function(res){
                 //console.log(res)
                 //取出数据中的topNav，是个数组
@@ -141,7 +141,7 @@ define([
     //侧边导航栏加载数据
     function sideNavdownload(){
         $.ajax({
-            url:"../data/nav.json",
+            url:"./data/nav.json",
             success:function(res){
                 //console.log(res)
                 //取出数据中的topNav，是个数组

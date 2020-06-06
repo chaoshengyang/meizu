@@ -9,7 +9,7 @@ define(["jquery"], function($){
 
     function handleClick(){
         $.ajax({
-            url:"../data/banner.json",
+            url:"./data/banner.json",
             success:function(res){
                 var bannerimg = res.bannerimg
                 // console.log(bannerimg)

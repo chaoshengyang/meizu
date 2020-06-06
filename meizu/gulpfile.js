@@ -62,9 +62,54 @@ gulp.task("scss2", () => {
     .pipe(connect.reload());
 })
 
+gulp.task("scss3", () => {
+    return gulp.src("shopDesc.scss")
+    //编译插件
+    .pipe(scss())
+    //生成的文件保存到制定文件夹
+    .pipe(gulp.dest("dist/css"))
+    //将文件压缩 重命名
+    .pipe(minifyCSS())
+    .pipe(rename("shopDesc.min.css"))
+    //再保存到指定文件夹下
+    .pipe(gulp.dest("dist/css"))
+    .pipe(connect.reload());
+})
+gulp.task("scss4", () => {
+    return gulp.src("shoppingcart.scss")
+    //编译插件
+    .pipe(scss())
+    //生成的文件保存到制定文件夹
+    .pipe(gulp.dest("dist/css"))
+    //将文件压缩 重命名
+    .pipe(minifyCSS())
+    .pipe(rename("shoppingcart.min.css"))
+    //再保存到指定文件夹下
+    .pipe(gulp.dest("dist/css"))
+    .pipe(connect.reload());
+})
+gulp.task("scss5", () => {
+    return gulp.src("login.scss")
+    //编译插件
+    .pipe(scss())
+    //生成的文件保存到制定文件夹
+    .pipe(gulp.dest("dist/css"))
+    //将文件压缩 重命名
+    .pipe(minifyCSS())
+    .pipe(rename("login.min.css"))
+    //再保存到指定文件夹下
+    .pipe(gulp.dest("dist/css"))
+    .pipe(connect.reload());
+})
+gulp.task("copy-php", () => {
+    return gulp.src("*.php")
+    .pipe(gulp.dest("dist/php"))
+    .pipe(connect.reload());
+})
+
 
 //编写一个可以执行上述所有文件的任务
-gulp.task("build", ["copy-html", "images", "scripts", "data", "scss1","scss2"], () => {
+gulp.task("build", ["copy-html", "images", "scripts", "data", "scss1","scss2","scss3","scss4","scss5","copy-php"], () => {
     console.log("项目建立成功");
 })
 
@@ -76,8 +121,13 @@ gulp.task("watch", () => {
     gulp.watch(["*.js", "!gulpfile.js"], ['scripts']);
     gulp.watch("index.scss", ['scss1']);
     gulp.watch("shoplist.scss", ['scss2']);
+    gulp.watch("shopDesc.scss", ['scss3']);
+    gulp.watch("shoppingcart.scss", ['scss4']);
+    gulp.watch("login.scss", ['scss5']);
+    gulp.watch("*.php", ['copy-php']);
    
 })
+
 
 //启动一个临时服务器  不支持运行php
 const connect = require("gulp-connect");

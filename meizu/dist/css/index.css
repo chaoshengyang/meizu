@@ -452,9 +452,11 @@ ul.children-list {
         font-size: 16px;
         margin-bottom: 2px; }
       .phonecontent-warp li a .goods-info .goods-desc {
+        display: inline-block;
+        height: 20px !important;
         margin-bottom: 3px;
         color: #999;
-        font-size: 14px; }
+        font-size: 13px; }
       .phonecontent-warp li a .goods-info .goods-price {
         position: relative;
         display: inline-block;

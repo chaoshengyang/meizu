@@ -2,42 +2,42 @@
     {
         "title":"魅族 16T",
         "price":"1999",
-         "img":"../images/16T_2.jpg"  
+         "img":"./images/16T_2.jpg"  
     },
     {
         "title":"魅族 16Xs",
         "price":"1699",
-         "img":"../images/meizu16s.png"  
+         "img":"./images/meizu16s.png"  
     },
     {
         "title":"魅族 Note9",
         "price":"1398",
-         "img":"../images/navphone7.jpg"  
+         "img":"./images/navphone7.jpg"  
     },
     {
         "title":"魅族 POP2 真无线蓝牙耳机",
         "price":"299",
-         "img":"../images/ear2.png"  
+         "img":"./images/ear2.png"  
     },
     {
         "title":"魅族 移动电源",
         "price":"79",
-         "img":"../images/peijian6.png"  
+         "img":"./images/peijian6.png"  
     },
     {
         "title":"魅族中国红 Type-C 金属编织线",
         "price":"39",
-         "img":"../images/peijian10.png"  
+         "img":"./images/peijian10.png"  
     },
     {
         "title":"魅族 EP3C 耳机",
         "price":"99",
-         "img":"../images/ear9.png"  
+         "img":"./images/ear9.png"  
     },
     {
         "title":"魅族 HIFI 解码耳放",
         "price":"119",
-         "img":"../images/ear3.png"  
+         "img":"./images/ear3.png"  
     }
 
     
